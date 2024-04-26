@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>TEA : ABOUT</title>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="stylesheet" href="" th:href="@{/css/Navigation.css}" />
+	<link rel="stylesheet" href="" th:href="@{/css/About.css}" />
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f5f5f5;
+			color: #333;
+		}
+		.container {
+			max-width: 800px;
+			margin: 50px auto;
+			padding: 20px;
+			/*background-color: #fff;*/
+			border-radius: 8px;
+			/*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
+		}
+		h1, h2 {
+			text-align: center;
+			color: #333;
+		}
+		p {
+			line-height: 1.6;
+		}
+	</style>
+</head>
+<body>
+	<nav th:replace="~{Navigation::navbar()}">	
+	</nav>
+
+	<div class="container information">
+		<h1>About Us</h1>
+		<p>Welcome to our Stock Management Platform!</p>
+		<p>We are dedicated to providing efficient solutions for inventory tracking, supplier management, and order optimization. Our platform is designed to streamline your business operations and enhance productivity.</p>
+		<h2>Our Mission</h2>
+		<p>Our mission is to empower businesses of all sizes to effectively manage their stock, reduce costs, and improve customer satisfaction. Through innovative technology and user-friendly interfaces, we aim to revolutionize the way businesses handle their inventory.</p>
+		<h2>Meet Our Team</h2>
+		<p>Our team consists of passionate individuals with expertise in software development, inventory management, and customer support. Together, we work tirelessly to deliver exceptional solutions tailored to your business needs.</p>
+		<p>For any inquiries or assistance, please don't hesitate to contact us.</p>
+	</div>
+
+	<div class="icons">
+		<h3><i class="fa-brands fa-square-instagram" style="color: black;"></i> :abcdxyz</h3>
+		<h3><i class="fa-solid fa-phone" style="color: black;"></i> : +212-0909090909</h3>
+		<h3> <i class="fa-solid fa-envelope" style="color: black;"></i>  : xyz488@gmail.com</h3>
+
+	</div>
+</body>
+</html>
